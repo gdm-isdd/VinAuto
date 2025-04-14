@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "vinauto"
+version = "1.0"
+description = "A virtual screening tool for automated docking using VINA"
+authors = ["Gabriele De Marco <gabriele.demarco.isdd@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
