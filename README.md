@@ -1,5 +1,5 @@
 # VinAuto
-VinAuto allows you to perform fully automatized dockings of dataset, by just using a CSV of SMILES and the pdb of your protein.
+VinAuto allows you to perform fully automatized dockings of dataset, by just using a CSV of SMILES and the pdb of your protein. (currently available for Windows)
 
 # OVERVIEW
 VinAuto is a software, that using Vina v1.2.5 [1,2], and Obabel [3,4] allows you dock a database of molecules in a fully automatized way, with only one command line, on a protein. You only need a csv containing the SMILES, and the pdb file of the monomer you wish to study. With just one line of command you can launch a fully automatized docking experiment, you will obtain the results in a pdbqt format for inspection, and log files that will show the score for each conformation.  
