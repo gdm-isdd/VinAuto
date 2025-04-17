@@ -121,12 +121,20 @@ vinauto -i your_file.csv -r your_protein.pdb -o output_folder -n 100 -e 8 -p 15
 ```
 
 # TROUBLESHOOTING AND FAQs
+### Problem: Vina is not found
+
+This can happen if you did not install Vina in its defaul installation directory (C:\Program Files (x86)\The Scripps Research Institute\Vina\vina_1.2.5_win.exe). To solve this, you will need to uninstall VinAuto:
+```batch
+pip uninstall VinAuto
+```
+And open the file "pipeline.py", and substitute the path to the vina executable with yours, in line 76.
+Once this is done, save the file, and install VinAuto as shown in the installation guide.
 
 ### Problem: No MOL2 files generated with specific SMILES
 
 Solution: Check SMILES formatting and ensure that OpenBabel is installed and in your PATH.
 
-###Problem: Docking results not showing expected number of poses in PyMOL
+### Problem: Docking results not showing expected number of poses in PyMOL
 
 Solution: Verify that you are loading the multi-state PDBQT file with the correct settings, such as using multi=1 in PyMOL.
 
